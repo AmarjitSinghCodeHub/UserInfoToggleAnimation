@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/styles.css" type="text/css"/>
+</head>
+<body>
+    
+    <div class="MainContainer">
+        <div class="userMenu">
+            <i class="ri-add-circle-line"></i>
+        </div>
+        <div class="UserInfo">
+
+            <div class="info">
+                
+                <div class="lineOne">
+                    <div class="divPic">
+                        <img src="images/UserPic.png" alt="User" />
+                    </div>
+                    <div class="DivUserName">
+                       <span>Mr. Sample Data</span>
+                       <span>Software Developer</span>
+                    </div>
+                </div>
+                <div class="lineTwo">
+                    <span><i class="ri-medal-line"></i></span>
+                    <span>Full Stack Developer</span>
+                </div>
+                <div class="lineTwo">
+                    <span><i class="ri-smartphone-line"></i></span>
+                    <span>+91-9898767654</span>
+                </div>
+                <div class="lineTwo">
+                    <span><i class="ri-mail-unread-line"></i></span>
+                    <span>sampeldata@gmail.com</span>
+                </div>
+                <div class="lineTwo">
+                    <span><i class="ri-map-pin-user-line"></i></span>
+                    <span>Bhubaneswar,India</span>
+                </div>
+
+             
+
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script>
+let _info =document.querySelector(".info");        
+let _userMenu =document.querySelector(".userMenu");
+let _UserInfo =document.querySelector(".UserInfo");
+_userMenu.onclick=function(){
+    _userMenu.classList.toggle('CloseMenu');
+    _UserInfo.classList.toggle('ToggleInfo');
+    _info.classList.toggle('infoUp');
+}
+
+
+    </script>
+
+</body>
+</html>
